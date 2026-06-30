@@ -1,58 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A playful random name generator.">
-  <title>Namefield — Random name generator</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Saifullah Iftikhar, an emerging data and business analyst and project coordinator based in Wisconsin." />
+  <title>Saifullah Iftikhar | Data, Business & Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <canvas id="dot-field" aria-hidden="true"></canvas>
-  <header>
-    <a class="brand" href="#"><span>N</span>Namefield</a>
-    <p>Random names, beautifully found.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Saifullah Iftikhar, home"><span class="brand-mark">SI</span><span class="brand-name">Saifullah Iftikhar</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Open navigation</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a class="nav-cta" href="#contact">Let's connect</a></nav>
   </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Meet your next favorite name</p>
-      <h1>A little randomness.<br><em>A lot of possibility.</em></h1>
-      <p class="intro">Fresh names for characters, projects, pets, alter egos, or whatever you’re dreaming up today.</p>
-      <div class="controls">
-        <label>Style
-          <select id="name-style">
-            <option value="mixed">Surprise me</option>
-            <option value="classic">Classic</option>
-            <option value="modern">Modern</option>
-            <option value="nature">Nature-inspired</option>
-          </select>
-        </label>
-        <label>Show
-          <select id="name-count">
-            <option value="6">6 names</option>
-            <option value="9" selected>9 names</option>
-            <option value="12">12 names</option>
-          </select>
-        </label>
-        <button id="shuffle" type="button">Find new names <span>↻</span></button>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Data · Business · Coordination</p>
+        <h1>Turning complex work into <em>clear progress.</em></h1>
+        <p class="hero-lede">I'm Saifullah, a Wisconsin-based professional bringing together data-minded problem solving, project coordination, and people-centered communication.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#experience">Explore my work <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#contact">Contact me <span aria-hidden="true">↘</span></a></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="A visual summary of Saifullah's working style">
+        <div class="signal-card"><div class="signal-top"><span>Working approach</span><span class="live-dot">Open to opportunities</span></div><div class="signal-grid"><div class="signal-copy"><span>01</span><strong>Understand</strong><small>Listen, assess, document</small></div><div class="signal-copy"><span>02</span><strong>Organize</strong><small>Align people and process</small></div><div class="signal-copy"><span>03</span><strong>Improve</strong><small>Use data to move forward</small></div></div></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="floating-tag tag-one">Data integrity</div><div class="floating-tag tag-two">Stakeholder alignment</div>
       </div>
     </section>
-
-    <section class="results">
-      <div class="results-heading">
-        <div><p>Today’s collection</p><h2>Names worth meeting</h2></div>
-        <span>Tap any name to copy it.</span>
-      </div>
-      <div id="name-grid" class="name-grid" aria-live="polite"></div>
+    <section class="proof-strip" aria-label="Professional highlights"><div><strong>B.S.</strong><span>Computer Information Technology</span></div><div><strong>4</strong><span>Professional environments</span></div><div><strong>WI</strong><span>Based in Wisconsin</span></div><div><strong>∞</strong><span>Curiosity for better systems</span></div></section>
+    <section id="about" class="section about">
+      <div class="section-heading reveal"><p class="section-index">01 / About</p><h2>A practical bridge between <span>people, process, and information.</span></h2></div>
+      <div class="about-grid"><div class="about-copy reveal"><p>My background spans case management, financial operations, customer service, and information technology. Across each setting, the common thread is clear: understand the need, keep the details accurate, and help people move work forward.</p><p>I hold a Bachelor of Science in Computer Information Technology from Metro State University. I'm now focused on opportunities in data and business analysis and project coordination where analytical thinking and thoughtful communication work side by side.</p></div><div class="capability-list reveal"><article><span>01</span><div><h3>Analysis & data</h3><p>Data integrity, reconciliation, needs assessment, feasibility studies</p></div></article><article><span>02</span><div><h3>Project coordination</h3><p>Stakeholder updates, requirements, documentation, risk communication</p></div></article><article><span>03</span><div><h3>Operations & service</h3><p>Workflow support, compliance, issue resolution, cross-team collaboration</p></div></article></div></div>
     </section>
+    <section id="experience" class="section experience">
+      <div class="section-heading reveal"><p class="section-index">02 / Experience</p><h2>Experience shaped by <span>accuracy and responsibility.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-meta"><span>Jul 2025 — Present</span><span>United States</span></div><div class="timeline-content"><p class="role-type">Current role</p><h3>Case Manager</h3><h4>Multicultural Care Center LLC</h4><p>Coordinate housing and service plans for individuals and families while maintaining detailed records, documentation standards, and communication with county and community partners.</p><ul class="tags"><li>Case documentation</li><li>Program coordination</li><li>Compliance</li><li>Partner communication</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-meta"><span>May 2024 — Jun 2025</span></div><div class="timeline-content"><p class="role-type">Financial operations</p><h3>Accounts Payable Clerk</h3><h4>American Foods Group</h4><p>Managed cattle purchase data, vendor setup, payment processing, and cost reconciliation while collaborating across teams to resolve discrepancies and protect data accuracy.</p><ul class="tags"><li>AS400</li><li>Data integrity</li><li>Reconciliation</li><li>Vendor records</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-meta"><span>Jan 2023 — Dec 2023</span></div><div class="timeline-content"><p class="role-type">Customer operations</p><h3>Guest Service Representative</h3><h4>Motel 6</h4><p>Managed reservations and transaction records, completed night audits, and resolved guest concerns in a fast-moving service environment.</p><ul class="tags"><li>Night audit</li><li>Issue resolution</li><li>Transaction records</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-meta"><span>May 2022 — Aug 2022</span></div><div class="timeline-content"><p class="role-type">Technology</p><h3>Information Technology Intern</h3><h4>Minnesota State University, Mankato</h4><p>Worked with faculty and vendors to identify software requirements, conduct needs assessments and feasibility studies, and communicate milestones and risks.</p><ul class="tags"><li>Requirements</li><li>Feasibility studies</li><li>Microsoft 365</li><li>Stakeholders</li></ul></div></article>
+      </div>
+    </section>
+    <section id="projects" class="section projects">
+      <div class="section-heading reveal"><p class="section-index">03 / Selected Projects</p><h2>Ideas explored through <span>technology and management.</span></h2></div>
+      <div class="project-grid"><article class="project-card project-coral reveal"><div class="project-number">01</div><div class="project-art dance-art" aria-hidden="true"><span>culture</span><span>movement</span><span>world</span></div><div class="project-body"><p>Web application</p><h3>Dancepedia</h3><p>A global dance exploration web app developed to bring dance traditions and discovery into one digital experience.</p></div></article><article class="project-card project-blue reveal"><div class="project-number">02</div><div class="project-art roots-art" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div class="project-body"><p>Management case study</p><h3>River Roots Farm & Retreat</h3><p>A case study centered on leadership, management decisions, and sustainable business strategy.</p></div></article></div>
+      <p class="project-note reveal">Project details reflect the information currently available in my professional profile.</p>
+    </section>
+    <section id="education" class="section education"><div class="section-heading reveal"><p class="section-index">04 / Education</p><h2>Grounded in <span>information and systems thinking.</span></h2></div><div class="education-grid"><article class="degree-card reveal"><span class="degree-year">2025</span><p>Bachelor of Science</p><h3>Computer Information Technology</h3><h4>Metro State University</h4><span>August 2023 — July 2025</span></article><article class="degree-card degree-secondary reveal"><span class="degree-year">2021—23</span><p>Academic study</p><h3>Management Information Systems</h3><h4>Minnesota State University, Mankato</h4><span>August 2021 — July 2023</span></article></div></section>
+    <section id="contact" class="contact"><div class="contact-inner reveal"><p class="eyebrow"><span></span> Available for the next challenge</p><h2>Let's make information <em>useful.</em></h2><p>I'm exploring data and business analyst and project coordination opportunities. If my background fits what you're building, I'd be glad to connect.</p><div class="contact-actions"><a class="button button-light" href="mailto:saifullah.iftikhar@outlook.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-outline" href="https://www.linkedin.com/in/saifullah-iftikhar-a0a901210" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
-
-  <div id="toast" class="toast" role="status" aria-live="polite">Copied!</div>
-  <footer><strong>Namefield</strong><span>Made for curious minds · <span id="year"></span></span></footer>
+  <footer><a class="brand" href="#home"><span class="brand-mark">SI</span><span class="brand-name">Saifullah Iftikhar</span></a><p>Data · Business · Project Coordination</p><p>© <span id="year"></span> Saifullah Iftikhar</p></footer>
 </body>
 </html>
